@@ -1,0 +1,212 @@
+/* === RESET & GLOBAL === */
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* === DARK MODE TOGGLE BUTTON === */
+#toggleDark {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #f39c12;
+  z-index: 999;
+}
+
+/* === CONTAINER === */
+.container {
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: white;
+  width: 100%;
+  height: 10vh;
+}
+
+.ul-navbar {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.li-navbar {
+  list-style-type: none;
+  padding: 15px;
+  margin: 5px;
+  color: black;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.li-navbar:hover {
+  background-color: white;
+  transition: .5s;
+  border-radius: 8px;
+}
+
+.a-navbar {
+  color: black;
+  text-decoration: none;
+}
+
+/* === CONTENT === */
+.content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.a-content {
+  background-color: aquamarine;
+  border-radius: 20px;
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-content {
+  border-radius: 20px;
+  width: 240px;
+  height: 240px;
+}
+
+/* === FOOTER === */
+.footer,
+footer {
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* === ABOUT SECTION === */
+.about-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  color: black;
+}
+
+.about-section h2 {
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid gold;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.about-container {
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* === DARK MODE STYLING === */
+body.dark {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark .navbar {
+  background-color: #2c2c2c;
+}
+
+body.dark .li-navbar {
+  color: #f0f0f0;
+}
+
+body.dark .a-navbar {
+  color: #f0f0f0;
+}
+
+body.dark .content {
+  background-color: #2c2c2c;
+}
+
+body.dark .a-content {
+  background-color: #444;
+}
+
+body.dark .footer,
+body.dark footer {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark .social-icons a {
+  color: #f1c40f;
+}
+
+body.dark .about-section {
+  color: #f0f0f0;
+}
+
+body.dark .about-container {
+  background-color: #333;
+}
+
+body.dark #toggleDark {
+  color: #f1c40f;
+}
+
+/* Default: Active link underlined (Light Mode) */
+.a-navbar.active {
+  border-bottom: 3px solid #f39c12;
+  padding-bottom: 5px;
+}
+
+/* Dark Mode: Ganti warna garis bawah saat aktif */
+body.dark .a-navbar.active {
+  border-bottom: 3px solid #f1c40f;
+}
