@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mhdarifinn.github.io/myportofolio/sitemap.xml
